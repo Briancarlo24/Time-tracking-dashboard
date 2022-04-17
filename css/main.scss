@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+@import "abstracts/variables";
+@import "components/card";
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+//Attribution
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  padding: 2.5rem;
+  background-color: $vd-blue;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+
+  @media only screen and (min-width: $desktop) {
+    height: 100vh;
+    width: 100%;
+  }
+}
+
+.main {
+  display: grid;
+  gap: 2.5rem;
+
+  @media only screen and (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+.card__main {
+  display: flex;
+  flex-direction: column;
+  // max-width: 50rem;
+  // min-width: 35rem;
+  color: inherit;
+  background-color: $dark-blue;
+  height: 22rem;
+  border-radius: 1.2rem;
+
+  @media only screen and (min-width: $desktop) {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    height: auto;
+  }
+}
+
+.card {
+  min-width: 35rem;
+  height: min-content;
+
+  border-radius: $card-radius;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+
+  @media only screen and (min-width: $desktop) {
+  }
+
+  &__img {
+    position: absolute;
+    right: 2rem;
+    top: -1rem;
+    z-index: -1;
+  }
+}
+
+.card__main {
+}
+.card--1 {
+  background-color: $work;
+}
+.card--2 {
+  background-color: $play;
+}
+.card--3 {
+  background-color: $study;
+}
+.card--4 {
+  background-color: $exercise;
+}
+.card--5 {
+  background-color: $social;
+}
+.card--6 {
+  background-color: $self-care;
+}
+
+.card--1,
+.card--2,
+.card--3,
+.card--4,
+.card--5,
+.card--6 {
+  min-width: max-content;
+}
