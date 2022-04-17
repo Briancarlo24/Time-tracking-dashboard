@@ -89,8 +89,6 @@ body {
   }
 }
 
-.card__main {
-}
 .card--1 {
   background-color: $work;
 }
@@ -117,4 +115,8 @@ body {
 .card--5,
 .card--6 {
   min-width: max-content;
+}
+
+.option__tab--active {
+  color: $white;
 }

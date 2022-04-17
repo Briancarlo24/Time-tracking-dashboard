@@ -14,6 +14,9 @@
 
     <link rel="stylesheet" href="css/main.css" />
     <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <script type="text/javascript" defer src="data.json"></script>
+    <script type="text/javascript" defer src="script.js"></script>
   </head>
   <body>
     <main class="main">
@@ -26,9 +29,9 @@
           </div>
         </div>
         <div class="options">
-          <div class="option--1">Daily</div>
-          <div class="option--2">Weekly</div>
-          <div class="option--3">Monthly</div>
+          <div class="option option__tab--active">Daily</div>
+          <div class="option">Weekly</div>
+          <div class="option">Monthly</div>
         </div>
       </section>
 
@@ -41,8 +44,8 @@
           </div>
 
           <div class="card__content--details">
-            <h3>32hrs</h3>
-            <p>Last Week - 36hrs</p>
+            <h3><span class="curHours">32</span>hrs</h3>
+            <p>Last Week - <span class="prevHours">36</span>hrs</p>
           </div>
         </div>
       </section>
@@ -56,8 +59,8 @@
           </div>
 
           <div class="card__content--details">
-            <h3>10hrs</h3>
-            <p>Last Week - 8hrs</p>
+            <h3><span class="curHours">10</span>hrs</h3>
+            <p>Last Week - <span class="prevHours">8</span>hrs</p>
           </div>
         </div>
       </section>
@@ -71,8 +74,8 @@
           </div>
 
           <div class="card__content--details">
-            <h3>4hrs</h3>
-            <p>Last Week - 7hrs</p>
+            <h3><span class="curHours">4</span>hrs</h3>
+            <p>Last Week - <span class="prevHours">7</span>hrs</p>
           </div>
         </div>
       </section>
@@ -90,8 +93,8 @@
           </div>
 
           <div class="card__content--details">
-            <h3>4hrs</h3>
-            <p>Last Week - 5hrs</p>
+            <h3><span class="curHours">4</span>hrs</h3>
+            <p>Last Week - <span class="prevHours">5</span>hrs</p>
           </div>
         </div>
       </section>
@@ -109,8 +112,8 @@
           </div>
 
           <div class="card__content--details">
-            <h3>5hrs</h3>
-            <p>Last Week - 10hrs</p>
+            <h3><span class="curHours">5</span>hrs</h3>
+            <p>Last Week - <span class="prevHours">10</span>hrs</p>
           </div>
         </div>
       </section>
@@ -128,8 +131,8 @@
           </div>
 
           <div class="card__content--details">
-            <h3>2hrs</h3>
-            <p>Last Week - 2hrs</p>
+            <h3><span class="curHours">2</span>hrs</h3>
+            <p>Last Week - <span class="prevHours">2</span>hrs</p>
           </div>
         </div>
       </section>
