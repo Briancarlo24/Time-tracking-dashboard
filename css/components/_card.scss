@@ -61,7 +61,7 @@ h3 {
 
   & > *:hover {
     cursor: pointer;
-    // color: $white;
+    color: $white;
   }
 }
 
@@ -73,6 +73,11 @@ h3 {
   border-top-right-radius: $card-radius;
   line-height: 1.6;
   z-index: 1111;
+
+  &:hover {
+    background-color: $desat-blue;
+    cursor: pointer;
+  }
 
   &--heading {
     display: flex;

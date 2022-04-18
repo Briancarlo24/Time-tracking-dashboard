@@ -91,6 +91,7 @@ h3 {
 
 .options > *:hover {
   cursor: pointer;
+  color: #fff;
 }
 
 .card__content {
@@ -101,6 +102,11 @@ h3 {
   border-top-right-radius: 1.2rem;
   line-height: 1.6;
   z-index: 1111;
+}
+
+.card__content:hover {
+  background-color: #6f76c8;
+  cursor: pointer;
 }
 
 .card__content--heading {
